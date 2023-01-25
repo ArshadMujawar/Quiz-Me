@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_height="96dp"
+        android:layout_width="96dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="16dp"
+        android:id="@+id/profileImage"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailBox"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="Email Address"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPurple"
+        android:drawableLeft="@drawable/email"
+        android:background="@drawable/textbox"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" android:id="@+id/nameBox"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="Name" android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPurple"
+        android:drawableLeft="@drawable/user"
+        android:background="@drawable/textbox"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passBox"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/colorPurple"
+        android:drawableLeft="@drawable/password"
+        android:background="@drawable/textbox"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@+id/passBox"
+        app:layout_constraintEnd_toEndOf="@+id/passBox"
+        android:layout_marginTop="16dp"
+        android:id="@+id/updateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/passBox"
+        android:background="@drawable/button_3"
+        android:textColor="@color/color_white"
+        android:text="@string/update_profile"
+        android:fontFamily="@font/roboto_bold"/>
+
+
+  <!--  <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn">
+
+    </com.google.android.gms.ads.AdView> -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
